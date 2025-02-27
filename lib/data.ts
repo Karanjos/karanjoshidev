@@ -1,13 +1,16 @@
 import { ExperienceDetails, ProjectDetails, Technology } from "./types";
-import Javascript from "../public/javascript.png";
-import ReactJs from "../public/reactjs.png";
-import NodeJs from "../public/nodejs.png";
-import Typescript from "../public/typescript.png";
-import MongoDB from "../public/mongodb.png";
-import Tailwind from "../public/tailwind.png";
-import Express from "../public/express.png";
-import NextJs from "../public/nextjs.png";
-import Git from "../public/git.png";
+import Javascript from "../public/icon-javascript.svg";
+import ReactJs from "../public/icon-react.svg";
+import NodeJs from "../public/icon-nodejs.svg";
+import Typescript from "../public/icon-typescript.svg";
+import MongoDB from "../public/icon-mongodb.svg";
+import Tailwind from "../public/icon-tailwindcss.svg";
+import ExpressLightMode from "../public/icon-express-light.svg";
+import ExpressDarkMode from "../public/icon-express.svg";
+import NextJs from "../public/icon-nextjs.svg";
+import Git from "../public/icon-git.svg";
+import SocketIODarkMode from "../public/icon-socket.svg";
+import SocketIOLightMode from "../public/icon-socket-light.svg";
 
 export const TECHNOLOGIES: Technology[] = [
   {
@@ -42,7 +45,8 @@ export const TECHNOLOGIES: Technology[] = [
   },
   {
     name: "Express",
-    logo: Express,
+    logo: ExpressDarkMode,
+    darkModeLogo: ExpressLightMode,
     url: "https://expressjs.com/",
   },
   {
@@ -54,6 +58,12 @@ export const TECHNOLOGIES: Technology[] = [
     name: "Git",
     logo: Git,
     url: "https://git-scm.com",
+  },
+  {
+    name: "SocketIO",
+    logo: SocketIODarkMode,
+    darkModeLogo: SocketIOLightMode,
+    url: "https://socket.io/",
   },
 ];
 

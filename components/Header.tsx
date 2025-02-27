@@ -24,10 +24,13 @@ const Header = () => {
                   <Link href="#about">About</Link>
                 </li>
                 <li>
-                  <Link href="#projects">Work</Link>
+                  <Link href="#experience">Experience</Link>
                 </li>
                 <li>
-                  <Link href="#blog">Project</Link>
+                  <Link href="#skills">Skills</Link>
+                </li>
+                <li>
+                  <Link href="#projects">Project</Link>
                 </li>
                 <li>
                   <Link href="#contact">Contact</Link>

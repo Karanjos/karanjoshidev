@@ -3,6 +3,7 @@ import type { StaticImageData } from "next/image";
 export type Technology = {
   name: string;
   logo: string | StaticImageData;
+  darkModeLogo?: string | StaticImageData;
   url: string;
 };
 
