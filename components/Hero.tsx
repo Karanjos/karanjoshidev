@@ -4,6 +4,8 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Image from "next/image";
 import sideImage from "../public/me.jpg";
+import FlipImage from "./FlipImage";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -11,7 +13,7 @@ const Hero = () => {
       className="bg-gray-100 text-gray-950 dark:bg-gray-950 dark:text-gray-100 w-full h-full"
       id="hero"
     >
-      <div className="max-w-7xl mx-auto px-4 lg:px-12 h-full flex lg:flex-row flex-col-reverse justify-between items-center py-20 gap-20 lg:gap-10 mt-20 lg:mt-0 ">
+      <div className="max-w-7xl mx-auto px-4 lg:px-12 h-full flex lg:flex-row flex-col-reverse justify-between items-center py-20 gap-20 lg:gap-10 mt-12 lg:mt-0 ">
         <div className="lg:max-w-[50%] flex flex-col gap-16 lg:gap-20 flex-1">
           <div className="flex flex-col gap-4">
             <h1 className="text-4xl lg:text-5xl font-bold tracking-wider">
@@ -40,20 +42,19 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex items-center justify-start gap-3">
-            <LinkedInIcon />
-            <GitHubIcon />
+            <Link
+              href="https://www.linkedin.com/in/karan-joshi-8b3910213/"
+              target="_blank"
+            >
+              <LinkedInIcon />
+            </Link>
+            <Link href="https://github.com/Karanjos" target="_blank">
+              <GitHubIcon />
+            </Link>
           </div>
         </div>
-        <div className="mx-auto flex items-center justify-center relative pl-10 lg:pl-40">
-          <div className="">
-            <div className="h-[300px] w-[250px]  rounded-md border-r-[40px] border-b-[40px] border-gray-300 dark:border-gray-700"></div>
-            <Image
-              src={sideImage}
-              alt="Me | Karan Joshi"
-              className="h-[300px] w-[250px] rounded-md absolute -top-12 lg:left-28 -left-2"
-            />
-          </div>
-        </div>
+
+        <FlipImage />
       </div>
     </section>
   );

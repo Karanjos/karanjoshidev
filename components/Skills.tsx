@@ -10,7 +10,7 @@ const Skills = () => {
       tag="Skills"
       classNames="bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100"
     >
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 lg:gap-20 gap-10">
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 lg:gap-20 gap-10 px-4 lg:px-0">
         {TECHNOLOGIES.map((tech, index) => (
           <div
             key={index}
@@ -21,7 +21,7 @@ const Skills = () => {
                 src={tech.logo}
                 srcForDarkMode={tech.darkModeLogo}
                 alt={tech.name}
-                className="transition-transform duration-300 md:hover:scale-110"
+                className="transition-transform duration-300 hover:scale-110"
               />
             </Link>
             <h2 className="text-xl font-semibold">{tech.name}</h2>

@@ -11,6 +11,7 @@ import NextJs from "../public/icon-nextjs.svg";
 import Git from "../public/icon-git.svg";
 import SocketIODarkMode from "../public/icon-socket.svg";
 import SocketIOLightMode from "../public/icon-socket-light.svg";
+import GamixLogo from "../public/gamixLogo.png";
 
 export const TECHNOLOGIES: Technology[] = [
   {
@@ -22,6 +23,11 @@ export const TECHNOLOGIES: Technology[] = [
     name: "ReactJs",
     logo: ReactJs,
     url: "https://reactjs.org/",
+  },
+  {
+    name: "ReactNative",
+    logo: ReactJs,
+    url: "https://reactnative.dev/",
   },
   {
     name: "NodeJs",
@@ -134,42 +140,38 @@ export const PROJECTSDETAILS: ProjectDetails[] = [
 
 export const EXPERIENCEDETAILS: ExperienceDetails[] = [
   {
-    company: "Company 1",
-    logo: "",
-    role: "Software Developer",
-    startDate: "Jan 2021",
-    endDate: "Present",
+    company: "Gamix Labs Pvt Ltd",
+    logo: GamixLogo,
+    role: "Frontend Game Developer",
+    startDate: "July 2024",
     currentlyWorkHere: true,
-    duration: "1 year 6 months",
-    summmary: "Worked on a project to develop a web application.",
-    technologies: [TECHNOLOGIES[0], TECHNOLOGIES[1], TECHNOLOGIES[2]],
-    location: "Location 1",
-    url: "https://www.company1.com",
+    duration: "8 months",
+    summmary:
+      "Working on interactive games using TypeScript, Cocos, Unity, ensuring engaging user experiences and high performance across platforms. Working with casino and slot games, ensuring engaging gameplay, high performance, and seamless user experience.",
+    technologies: [TECHNOLOGIES[4].name, "COCOS CREATOR", "UNITY", "C#"],
+    location: "Noida, India",
+    url: "https://www.gamixlabs.com/",
   },
   {
-    company: "Company 2",
+    company: "Great Developers Info Tech",
     logo: "",
-    role: "Software Developer",
-    startDate: "Jan 2020",
-    endDate: "Dec 2020",
+    role: "Software Developer Intern",
+    startDate: "March 2024",
+    endDate: "June 2024",
     currentlyWorkHere: false,
-    duration: "1 year",
-    summmary: "Worked on a project to develop a web application.",
-    technologies: [TECHNOLOGIES[0], TECHNOLOGIES[1], TECHNOLOGIES[2]],
-    location: "Location 2",
-    url: "https://www.company2.com",
-  },
-  {
-    company: "Company 3",
-    logo: "",
-    role: "Software Developer",
-    startDate: "Jan 2019",
-    endDate: "Dec 2019",
-    currentlyWorkHere: false,
-    duration: "1 year",
-    summmary: "Worked on a project to develop a web application.",
-    technologies: [TECHNOLOGIES[0], TECHNOLOGIES[1], TECHNOLOGIES[2]],
-    location: "Location 3",
-    url: "https://www.company3.com",
+    duration: "3 Months",
+    summmary:
+      "I used AJAX for fetching data asynchronously from the server. I used MVC architecture for developing the application using DOTNET and C#. I used SQL for database management.",
+    technologies: [
+      "HTML",
+      "CSS | Bootstrap",
+      "AJAX",
+      "JAVASCRIPT",
+      "C#",
+      "DOTNET",
+      "SQL",
+    ],
+    location: "Noida, India",
+    url: "https://www.greatdevelopers.com/",
   },
 ];

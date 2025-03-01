@@ -21,14 +21,14 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky z-10 top-0 left-0 dark:bg-gray-950 bg-gray-100 w-full h-[80px] dark:text-gray-100 text-gray-950 font-semibold">
+    <header className="sticky z-10 top-0 left-0 dark:bg-gray-950 bg-gray-100 w-full h-[70px] dark:text-gray-100 text-gray-950 font-semibold">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex justify-between items-center h-full w-full">
           <div className="flex items-center">
             <div className="flex justify-center items-center">
-              <div className="animate-spin rounded-full h-20 w-20 border-t-2 border-b-2 dark:border-gray-300 border-gray-700 "></div>
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 dark:border-gray-200 border-gray-700 "></div>
               <Link href="/" className="absolute">
-                Karan
+                {"<KJ />"}
               </Link>
             </div>
           </div>
@@ -44,10 +44,10 @@ const Header = () => {
               orientation="vertical"
               variant="fullWidth"
               flexItem
-              className="dark:bg-gray-200 bg-gray-900 dark:bg-opacity-50"
+              className="dark:bg-gray-100 bg-gray-900 dark:bg-opacity-50"
             />
             <div className="flex items-center gap-8">
-              <div className="hover:dark:bg-gray-700 transition-all duration-300 hover:bg-gray-300  p-2 rounded-2xl">
+              <div className="hover:dark:bg-gray-800 cursor-pointer transition-all duration-300 hover:bg-gray-200 p-0 rounded-2xl">
                 {theme === "light" ? (
                   <NightsStayIcon onClick={() => setTheme("dark")} />
                 ) : (
@@ -56,7 +56,7 @@ const Header = () => {
               </div>
               <button
                 onClick={downloadResume}
-                className="bg-gray-900 dark:bg-gray-100 px-4 py-2 rounded-2xl text-gray-50 dark:text-gray-900"
+                className="bg-gray-900 dark:bg-gray-100 px-4 py-2 rounded-2xl text-gray-50 dark:text-gray-900 hover:bg-gray-700 transition-all duration-300 hover:dark:bg-gray-200"
               >
                 Download Resume
               </button>
@@ -65,23 +65,33 @@ const Header = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-2xl"
+              className="p-1 rounded-2xl hover:dark:bg-gray-900 transition-all duration-300 hover:bg-gray-200"
             >
-              {isOpen ? (
-                <CloseIcon fontSize="large" />
-              ) : (
-                <MenuIcon fontSize="large" />
-              )}
+              <MenuIcon fontSize="large" />
             </button>
           </div>
         </div>
         <div
           className={`${
             isOpen ? "flex" : "hidden"
-          } lg:hidden flex-col gap-12 absolute top-20 left-0 w-full h-screen dark:bg-gray-950 bg-gray-100 p-4`}
+          } lg:hidden flex-col gap-12 absolute top-0 left-0 w-full h-screen dark:bg-gray-950 bg-gray-100 py-3 px-6`}
         >
+          <div className="flex justify-between items-center w-full">
+            <div className="flex justify-center items-center">
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 dark:border-gray-300 border-gray-700 "></div>
+              <Link href="/" className="absolute">
+                Karan
+              </Link>
+            </div>
+            <button
+              onClick={() => setIsOpen(false)}
+              className="p-1 rounded-2xl hover:dark:bg-gray-900 transition-all duration-300 hover:bg-gray-200"
+            >
+              <CloseIcon fontSize="large" />
+            </button>
+          </div>
           <div
-            className="flex flex-col gap-4 justify-center items-center mt-10"
+            className="flex flex-col gap-4 justify-center items-center mt-0"
             onClick={() => setIsOpen(false)}
           >
             <CustomLink href="#about" label="About" />
@@ -98,7 +108,7 @@ const Header = () => {
           <div className="flex flex-col items-center gap-8 w-full">
             <div className="flex items-center justify-between gap-8 w-full px-4">
               <p className="text-md">Switch Theme</p>
-              <div className="hover:dark:bg-gray-700 transition-all duration-300 hover:bg-gray-300  p-2 rounded-2xl">
+              <div className="hover:dark:bg-gray-800 cursor-pointer transition-all duration-300 hover:bg-gray-200 p-2 rounded-xl">
                 {theme === "light" ? (
                   <NightsStayIcon
                     fontSize="medium"
@@ -114,7 +124,7 @@ const Header = () => {
             </div>
             <button
               onClick={downloadResume}
-              className="bg-gray-900 dark:bg-gray-100 px-4 py-2 rounded-2xl text-gray-50 dark:text-gray-900 w-full"
+              className="bg-gray-900 dark:bg-gray-100 px-4 py-2 rounded-2xl text-gray-50 dark:text-gray-900 w-full hover:bg-gray-700 transition-all duration-300 hover:dark:bg-gray-300"
             >
               Download Resume
             </button>

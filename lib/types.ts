@@ -16,7 +16,7 @@ export type ExperienceDetails = {
   startDate: string;
   endDate?: string;
   summmary: string;
-  technologies: Technology[];
+  technologies: string[];
   location: string;
   url: string;
 };
