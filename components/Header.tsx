@@ -33,7 +33,7 @@ const Header = () => {
             </div>
           </div>
           <div className="hidden lg:flex justify-center items-center gap-8">
-            <div className="flex gap-2">
+            <div className="flex gap-6">
               <CustomLink href="#about" label="About" />
               <CustomLink href="#experience" label="Experience" />
               <CustomLink href="#skills" label="Skills" />

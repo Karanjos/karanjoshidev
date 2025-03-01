@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Footer from "@/components/Footer";
 import GetInTouch from "@/components/GetInTouch";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -16,6 +17,7 @@ export default function Home() {
       <WorkExperience />
       <Projects />
       <GetInTouch />
+      <Footer />
     </main>
   );
 }
