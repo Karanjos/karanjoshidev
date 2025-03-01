@@ -30,11 +30,11 @@ const About = () => {
             readable, highly performant code matters to me.
           </p>
           <p>
-            I began my journey in 2024, and since then, I've continued to grow
-            and evolve as a developer, taking on new challenges and learning the
-            latest technologies along the way. I'm building cutting-edge web
-            applications using modern technologies such as Next.js, TypeScript,
-            Tailwindcss, Node.js and much more.
+            I began my journey in 2024, and since then, I&apos;ve continued to
+            grow and evolve as a developer, taking on new challenges and
+            learning the latest technologies along the way. I&apos;m building
+            cutting-edge web applications using modern technologies such as
+            Next.js, TypeScript, Tailwindcss, Node.js and much more.
           </p>
           <p>
             I am very much a progressive thinker and enjoy working on products
@@ -49,8 +49,8 @@ const About = () => {
             <li>Pasionate for Software Development</li>
           </ul>
           <p>
-            One last thing, I'm available for freelance work, so feel free to
-            reach out and say hello! I promise I don't bite 😉
+            One last thing, I&apos;m available for freelance work, so feel free
+            to reach out and say hello! I promise I don&apos;t bite 😉
           </p>
         </div>
       </div>

@@ -9,8 +9,9 @@ const GetInTouch = () => {
     >
       <div className="flex flex-col gap-4">
         <p>
-          I'm always open to new opportunities and collaborations. If you have
-          any questions or just want to say hi, feel free to reach out to me.
+          I&apos;m always open to new opportunities and collaborations. If you
+          have any questions or just want to say hi, feel free to reach out to
+          me.
         </p>
         <p>
           You can contact me through my email at{" "}
@@ -23,8 +24,8 @@ const GetInTouch = () => {
           or through my social media handles.
         </p>
         <p>
-          I'm also available for freelance work, so if you have a project in
-          mind, let's talk!
+          I&apos;m also available for freelance work, so if you have a project
+          in mind, let&apos;s talk!
         </p>
         <p></p>
       </div>
