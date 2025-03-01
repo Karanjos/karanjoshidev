@@ -1,18 +1,23 @@
-import Tag from "./Tag";
+import { EXPERIENCEDETAILS } from "@/lib/data";
+import Card from "./Card";
+import ExperienceCard from "./ExperinceCard";
+import Container from "./Container";
 
 const WorkExperience = () => {
   return (
-    <section
+    <Container
       id="experience"
-      className="bg-gray-100 text-gray-950 dark:bg-gray-900 dark:text-gray-100 w-full h-full py-20"
+      tag="Experience"
+      classNames="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200"
     >
-      <div className="flex flex-col justify-center items-center">
-        <div className="self-center">
-          <Tag label="Experience" />
-        </div>
-        <div className="max-w-7xl mx-auto px-4 lg:px-12 h-full flex lg:flex-row flex-col justify-between items-center gap-20 lg:gap-10 py-20"></div>
+      <div className="flex flex-col gap-10">
+        {EXPERIENCEDETAILS.map((experience, index) => (
+          <Card key={index}>
+            <ExperienceCard {...experience} />
+          </Card>
+        ))}
       </div>
-    </section>
+    </Container>
   );
 };
 export default WorkExperience;

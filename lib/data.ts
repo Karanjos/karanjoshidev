@@ -143,6 +143,8 @@ export const EXPERIENCEDETAILS: ExperienceDetails[] = [
     duration: "1 year 6 months",
     summmary: "Worked on a project to develop a web application.",
     technologies: [TECHNOLOGIES[0], TECHNOLOGIES[1], TECHNOLOGIES[2]],
+    location: "Location 1",
+    url: "https://www.company1.com",
   },
   {
     company: "Company 2",
@@ -154,6 +156,8 @@ export const EXPERIENCEDETAILS: ExperienceDetails[] = [
     duration: "1 year",
     summmary: "Worked on a project to develop a web application.",
     technologies: [TECHNOLOGIES[0], TECHNOLOGIES[1], TECHNOLOGIES[2]],
+    location: "Location 2",
+    url: "https://www.company2.com",
   },
   {
     company: "Company 3",
@@ -165,5 +169,7 @@ export const EXPERIENCEDETAILS: ExperienceDetails[] = [
     duration: "1 year",
     summmary: "Worked on a project to develop a web application.",
     technologies: [TECHNOLOGIES[0], TECHNOLOGIES[1], TECHNOLOGIES[2]],
+    location: "Location 3",
+    url: "https://www.company3.com",
   },
 ];

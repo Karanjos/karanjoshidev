@@ -17,6 +17,8 @@ export type ExperienceDetails = {
   endDate?: string;
   summmary: string;
   technologies: Technology[];
+  location: string;
+  url: string;
 };
 
 export type ProjectDetails = {
