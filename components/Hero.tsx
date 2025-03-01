@@ -11,7 +11,7 @@ const Hero = () => {
       className="bg-gray-100 text-gray-950 dark:bg-gray-950 dark:text-gray-100 w-full h-full"
       id="hero"
     >
-      <div className="max-w-7xl mx-auto px-4 lg:px-12 h-full flex lg:flex-row flex-col-reverse justify-between items-center py-20 gap-20 lg:gap-10 mt-20 md:mt-0 ">
+      <div className="max-w-7xl mx-auto px-4 lg:px-12 h-full flex lg:flex-row flex-col-reverse justify-between items-center py-20 gap-20 lg:gap-10 mt-20 lg:mt-0 ">
         <div className="lg:max-w-[50%] flex flex-col gap-16 lg:gap-20 flex-1">
           <div className="flex flex-col gap-4">
             <h1 className="text-4xl lg:text-5xl font-bold tracking-wider">
