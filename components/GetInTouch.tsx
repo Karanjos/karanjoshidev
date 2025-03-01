@@ -9,7 +9,6 @@ import XIcon from "@mui/icons-material/X";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Container from "./Container";
 import Link from "next/link";
-import { useState } from "react";
 import { copyTextToClipboard } from "@/lib/utils";
 
 const GetInTouch = () => {

@@ -2,8 +2,6 @@ import LocationOnSharpIcon from "@mui/icons-material/LocationOnSharp";
 import CircleIcon from "@mui/icons-material/Circle";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import Image from "next/image";
-import sideImage from "../public/me.jpg";
 import FlipImage from "./FlipImage";
 import Link from "next/link";
 

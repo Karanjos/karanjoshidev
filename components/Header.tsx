@@ -11,6 +11,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useTheme } from "next-themes";
 import { useState } from "react";
 import CustomLink from "./CustomLink";
+import Image from "next/image";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
@@ -26,9 +27,9 @@ const Header = () => {
         <div className="flex justify-between items-center h-full w-full">
           <div className="flex items-center">
             <div className="flex justify-center items-center">
-              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 dark:border-gray-200 border-gray-700 "></div>
+              <div className="animate-spin rounded-full h-[53px] w-[53px] border-t-2 border-b-2 dark:border-gray-200 border-red-700"></div>
               <Link href="/" className="absolute">
-                {"<KJ />"}
+                <Image src="/logo.png" alt="KJ" width={50} height={50} />
               </Link>
             </div>
           </div>
@@ -74,13 +75,13 @@ const Header = () => {
         <div
           className={`${
             isOpen ? "flex" : "hidden"
-          } lg:hidden flex-col gap-12 absolute top-0 left-0 w-full h-screen dark:bg-gray-950 bg-gray-100 py-3 px-6`}
+          } lg:hidden flex-col gap-12 absolute top-0 left-0 w-full h-screen dark:bg-gray-950 bg-gray-100 py-3 px-4`}
         >
           <div className="flex justify-between items-center w-full">
             <div className="flex justify-center items-center">
-              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 dark:border-gray-300 border-gray-700 "></div>
+              <div className="animate-spin rounded-full h-[53px] w-[53px] border-t-2 border-b-2 dark:border-gray-200 border-red-700"></div>
               <Link href="/" className="absolute">
-                Karan
+                <Image src="/logo.png" alt="KJ" width={50} height={50} />
               </Link>
             </div>
             <button
