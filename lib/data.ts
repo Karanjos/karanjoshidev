@@ -13,6 +13,8 @@ import SocketIODarkMode from "../public/icon-socket.svg";
 import SocketIOLightMode from "../public/icon-socket-light.svg";
 import GamixLogo from "../public/gamixLogo.png";
 import GreatDevLogo from "../public/great_developers_logo.jpg";
+import image from "../public/full_me_2.jpg";
+import image2 from "../public/full_me.jpg";
 
 export const TECHNOLOGIES: Technology[] = [
   {
@@ -88,7 +90,7 @@ export const PROJECTSDETAILS: ProjectDetails[] = [
       TECHNOLOGIES[8].name,
     ],
     githubUrl: "",
-    previewImage: "",
+    previewImage: image,
     url: "",
   },
   {
@@ -104,7 +106,7 @@ export const PROJECTSDETAILS: ProjectDetails[] = [
       TECHNOLOGIES[6].name,
     ],
     githubUrl: "",
-    previewImage: "",
+    previewImage: image2,
     url: "",
   },
   {
@@ -119,7 +121,7 @@ export const PROJECTSDETAILS: ProjectDetails[] = [
       TECHNOLOGIES[6].name,
     ],
     githubUrl: "",
-    previewImage: "",
+    previewImage: image,
     url: "",
   },
 ];

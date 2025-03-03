@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import image from "../public/full_me_2.jpg";
 
 type ProjectDetailsProps = ProjectDetails;
 
@@ -19,7 +18,11 @@ const ProjectCard = ({
     <div className="flex justify-center flex-col lg:flex-row items-center max-w-5xl mx-auto gap-4 lg:gap-10 w-full my-4">
       <div className="flex justify-center items-center lg:w-1/2  rounded-2xl lg:pe-10">
         <Link href={url} target="_blank">
-          <Image src={image} alt={name} className="size-full rounded-xl" />
+          <Image
+            src={previewImage}
+            alt={name}
+            className="size-full rounded-xl"
+          />
         </Link>
       </div>
       <div className="flex flex-col gap-10 items-start justify-start lg:w-1/2">
