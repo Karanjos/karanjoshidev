@@ -7,7 +7,7 @@ type ExperienceCardProps = ExperienceDetails;
 const ExperienceCard = ({ ...props }: ExperienceCardProps) => {
   return (
     <div className="flex justify-center items-center max-w-4xl mx-auto">
-      <div className="flex flex-col md:flex-row justify-between gap-4 lg:gap-10 p-4 w-full">
+      <div className="flex flex-col md:flex-row justify-between gap-4 lg:gap-10 w-full">
         <Link
           href={props.url}
           className="flex flex-col gap-2 lg:w-1/5 items-start justify-start"
@@ -33,7 +33,7 @@ const ExperienceCard = ({ ...props }: ExperienceCardProps) => {
                 ))}
               </p>
             </div>
-            <p>{props.summmary}</p>
+            <p className="text-sm font-normal">{props.summmary}</p>
           </div>
         </div>
         <div className="flex flex-col gap-0 lg:w-1/5 items-start justify-start">

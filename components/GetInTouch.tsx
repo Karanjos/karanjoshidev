@@ -20,7 +20,7 @@ const GetInTouch = () => {
       id="contact"
       classNames="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
     >
-      <div className="flex flex-col items-center justify-center gap-8">
+      <div className="flex flex-col items-center justify-center gap-8 py-12">
         <p className="text-semibold text-md text-center">
           Get In Touch What’s next? Feel free to reach out to me if you are
           looking for a developer, have a query, or simply want to connect.

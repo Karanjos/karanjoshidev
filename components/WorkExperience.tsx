@@ -10,7 +10,10 @@ const WorkExperience = () => {
       tag="Experience"
       classNames="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200"
     >
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col items-center gap-10">
+        <h4 className="text-lg font-normal my-8 text-center">
+          Here is a quick summary of my work experience.
+        </h4>
         {EXPERIENCEDETAILS.map((experience, index) => (
           <Card key={index}>
             <ExperienceCard {...experience} />

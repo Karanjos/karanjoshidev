@@ -12,6 +12,7 @@ import Git from "../public/icon-git.svg";
 import SocketIODarkMode from "../public/icon-socket.svg";
 import SocketIOLightMode from "../public/icon-socket-light.svg";
 import GamixLogo from "../public/gamixLogo.png";
+import GreatDevLogo from "../public/great_developers_logo.jpg";
 
 export const TECHNOLOGIES: Technology[] = [
   {
@@ -78,16 +79,16 @@ export const PROJECTSDETAILS: ProjectDetails[] = [
     name: "Portfolio",
     description: "A portfolio website to showcase my projects and skills.",
     technologies: [
-      TECHNOLOGIES[0],
-      TECHNOLOGIES[1],
-      TECHNOLOGIES[2],
-      TECHNOLOGIES[3],
-      TECHNOLOGIES[6],
-      TECHNOLOGIES[7],
-      TECHNOLOGIES[8],
+      TECHNOLOGIES[0].name,
+      TECHNOLOGIES[1].name,
+      TECHNOLOGIES[2].name,
+      TECHNOLOGIES[3].name,
+      TECHNOLOGIES[6].name,
+      TECHNOLOGIES[7].name,
+      TECHNOLOGIES[8].name,
     ],
     githubUrl: "",
-    previewImages: "",
+    previewImage: "",
     url: "",
   },
   {
@@ -95,45 +96,30 @@ export const PROJECTSDETAILS: ProjectDetails[] = [
     description:
       "A web application to manage the placement process of a college.",
     technologies: [
-      TECHNOLOGIES[0],
-      TECHNOLOGIES[1],
-      TECHNOLOGIES[2],
-      TECHNOLOGIES[3],
-      TECHNOLOGIES[4],
-      TECHNOLOGIES[6],
+      TECHNOLOGIES[0].name,
+      TECHNOLOGIES[1].name,
+      TECHNOLOGIES[2].name,
+      TECHNOLOGIES[3].name,
+      TECHNOLOGIES[4].name,
+      TECHNOLOGIES[6].name,
     ],
     githubUrl: "",
-    previewImages: "",
+    previewImage: "",
     url: "",
   },
   {
     name: "E-Commerce",
     description: "An e-commerce website to buy and sell products.",
     technologies: [
-      TECHNOLOGIES[0],
-      TECHNOLOGIES[1],
-      TECHNOLOGIES[2],
-      TECHNOLOGIES[3],
-      TECHNOLOGIES[4],
-      TECHNOLOGIES[6],
+      TECHNOLOGIES[0].name,
+      TECHNOLOGIES[1].name,
+      TECHNOLOGIES[2].name,
+      TECHNOLOGIES[3].name,
+      TECHNOLOGIES[4].name,
+      TECHNOLOGIES[6].name,
     ],
     githubUrl: "",
-    previewImages: "",
-    url: "",
-  },
-  {
-    name: "Blog",
-    description: "A blog website to write and share blogs.",
-    technologies: [
-      TECHNOLOGIES[0],
-      TECHNOLOGIES[1],
-      TECHNOLOGIES[2],
-      TECHNOLOGIES[3],
-      TECHNOLOGIES[4],
-      TECHNOLOGIES[6],
-    ],
-    githubUrl: "",
-    previewImages: "",
+    previewImage: "",
     url: "",
   },
 ];
@@ -154,7 +140,7 @@ export const EXPERIENCEDETAILS: ExperienceDetails[] = [
   },
   {
     company: "Great Developers Info Tech",
-    logo: "",
+    logo: GreatDevLogo,
     role: "Software Developer Intern",
     startDate: "March 2024",
     endDate: "June 2024",

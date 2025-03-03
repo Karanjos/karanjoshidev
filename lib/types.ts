@@ -24,8 +24,8 @@ export type ExperienceDetails = {
 export type ProjectDetails = {
   name: string;
   description: string;
-  technologies: Technology[];
+  technologies: string[];
   url: string;
-  previewImages: string | StaticImageData;
+  previewImage: string | StaticImageData;
   githubUrl: string;
 };
