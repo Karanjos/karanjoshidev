@@ -13,8 +13,9 @@ import SocketIODarkMode from "../public/icon-socket.svg";
 import SocketIOLightMode from "../public/icon-socket-light.svg";
 import GamixLogo from "../public/gamixLogo.png";
 import GreatDevLogo from "../public/great_developers_logo.jpg";
-import image from "../public/full_me_2.jpg";
-import image2 from "../public/full_me.jpg";
+import placementPortalPreviewImage from "../public/placementportalPreview.png";
+import shopNowPreviewImage from "../public/shopNowPreview.png";
+import medRemindPreviewImage from "../public/medremindPreview.jpg";
 
 export const TECHNOLOGIES: Technology[] = [
   {
@@ -78,53 +79,92 @@ export const TECHNOLOGIES: Technology[] = [
 
 export const PROJECTSDETAILS: ProjectDetails[] = [
   {
-    name: "Portfolio",
-    description: "A portfolio website to showcase my projects and skills.",
-    technologies: [
-      TECHNOLOGIES[0].name,
-      TECHNOLOGIES[1].name,
-      TECHNOLOGIES[2].name,
-      TECHNOLOGIES[3].name,
-      TECHNOLOGIES[6].name,
-      TECHNOLOGIES[7].name,
-      TECHNOLOGIES[8].name,
-    ],
-    githubUrl: "",
-    previewImage: image,
-    url: "",
-  },
-  {
     name: "Placement Portal",
     description:
-      "A web application to manage the placement process of a college.",
-    technologies: [
-      TECHNOLOGIES[0].name,
-      TECHNOLOGIES[1].name,
-      TECHNOLOGIES[2].name,
-      TECHNOLOGIES[3].name,
-      TECHNOLOGIES[4].name,
-      TECHNOLOGIES[6].name,
-    ],
-    githubUrl: "",
-    previewImage: image2,
-    url: "",
+      "A platform to streamline the placement process, allowing students to apply for jobs and recruiters to manage applications efficiently.",
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    url: "https://placement-portal-bjpx.onrender.com/",
+    previewImage: placementPortalPreviewImage,
+    githubUrl: "https://github.com/Karanjos/Placement-Portal",
   },
   {
-    name: "E-Commerce",
-    description: "An e-commerce website to buy and sell products.",
-    technologies: [
-      TECHNOLOGIES[0].name,
-      TECHNOLOGIES[1].name,
-      TECHNOLOGIES[2].name,
-      TECHNOLOGIES[3].name,
-      TECHNOLOGIES[4].name,
-      TECHNOLOGIES[6].name,
-    ],
-    githubUrl: "",
-    previewImage: image,
-    url: "",
+    name: "Shop Now",
+    description:
+      "An e-commerce platform with product listings, a cart system, authentication, and a seamless checkout experience.",
+    technologies: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Prisma"],
+    url: "https://github.com/Karanjos/shop_now",
+    previewImage: shopNowPreviewImage,
+    githubUrl: "https://github.com/Karanjos/shop_now",
   },
+  {
+    name: "Medicine Reminder",
+    description:
+      "A mobile application that helps users set reminders for their medication schedules, ensuring they never miss a dose.",
+    technologies: ["React Native", "Expo", "Node.js", "MongoDB", "TypeScript"],
+    url: "https://github.com/Karanjos/Medicine-Reminder",
+    previewImage: medRemindPreviewImage,
+    githubUrl: "https://github.com/Karanjos/Medicine-Reminder",
+  },
+  // {
+  //   name: "Portfolio Website",
+  //   description:
+  //     "A personal portfolio showcasing projects, skills, and experience, built with an interactive UI.",
+  //   technologies: ["React.js", "Next.js", "Tailwind CSS"],
+  //   url: "https://karanjoshi.dev",
+  //   previewImage: "/images/portfolio.png",
+  //   githubUrl: "https://github.com/karanjoshi/portfolio",
+  // },
 ];
+
+// export const PROJECTSDETAILS: ProjectDetails[] = [
+//   {
+//     name: "Portfolio",
+//     description: "A portfolio website to showcase my projects and skills.",
+//     technologies: [
+//       TECHNOLOGIES[0].name,
+//       TECHNOLOGIES[1].name,
+//       TECHNOLOGIES[2].name,
+//       TECHNOLOGIES[3].name,
+//       TECHNOLOGIES[6].name,
+//       TECHNOLOGIES[7].name,
+//       TECHNOLOGIES[8].name,
+//     ],
+//     githubUrl: "",
+//     previewImage: image,
+//     url: "",
+//   },
+//   {
+//     name: "Placement Portal",
+//     description:
+//       "A web application to manage the placement process of a college.",
+//     technologies: [
+//       TECHNOLOGIES[0].name,
+//       TECHNOLOGIES[1].name,
+//       TECHNOLOGIES[2].name,
+//       TECHNOLOGIES[3].name,
+//       TECHNOLOGIES[4].name,
+//       TECHNOLOGIES[6].name,
+//     ],
+//     githubUrl: "",
+//     previewImage: image2,
+//     url: "",
+//   },
+//   {
+//     name: "E-Commerce",
+//     description: "An e-commerce website to buy and sell products.",
+//     technologies: [
+//       TECHNOLOGIES[0].name,
+//       TECHNOLOGIES[1].name,
+//       TECHNOLOGIES[2].name,
+//       TECHNOLOGIES[3].name,
+//       TECHNOLOGIES[4].name,
+//       TECHNOLOGIES[6].name,
+//     ],
+//     githubUrl: "",
+//     previewImage: image,
+//     url: "",
+//   },
+// ];
 
 export const EXPERIENCEDETAILS: ExperienceDetails[] = [
   {

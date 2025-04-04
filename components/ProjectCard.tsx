@@ -21,7 +21,7 @@ const ProjectCard = ({
           <Image
             src={previewImage}
             alt={name}
-            className="size-full rounded-xl"
+            className="w-full max-h-96 rounded-xl"
           />
         </Link>
       </div>
